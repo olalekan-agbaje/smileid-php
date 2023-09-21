@@ -63,7 +63,7 @@ final class SmileIdentityCoreTest extends TestCase
 
     public function testInitialize(): void
     {
-        $this->assertInstanceOf('SmileIdentityCore', $this->sic);
+        $this->assertInstanceOf(SmileIdentityCore::class, $this->sic);
     }
 
     public function testGetVersion(): void
