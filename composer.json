@@ -1,8 +1,8 @@
 {
-	"name": "smile-identity/smile-identity-core",
+	"name": "olalekan/smile-identity-core",
 	"type": "library",
-	"description": "The Official Smile Identity PHP library",
-	"homepage": "https://github.com/smileidentity/smile-identity-core-php",
+	"description": "Smile ID PHP Server-toserver library",
+	"homepage": "https://github.com/olalekan-agbaje/smileid-php",
 	"license": "MIT",
 	"authors": [
 		{
