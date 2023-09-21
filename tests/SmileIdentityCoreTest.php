@@ -1,15 +1,23 @@
 <?php
 declare(strict_types=1);
 
-require 'lib/SmileIdentityCore.php';
+// require 'lib/SmileIdentityCore.php';
 
+use Exception;
+use DateTimeInterface;
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Response;
 use Ouzo\Utilities\Clock;
+use SmileIdentity\Config;
+use SmileIdentity\JobType;
+use GuzzleHttp\HandlerStack;
+use SmileIdentity\ImageType;
+use GuzzleHttp\Psr7\Response;
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
+use GuzzleHttp\Handler\MockHandler;
+use SmileIdentity\SmileIdentityCore;
+use GuzzleHttp\Exception\GuzzleException;
+use SmileIdentity\BusinessVerificationType;
 
 final class SmileIdentityCoreTest extends TestCase
 {

@@ -1,15 +1,19 @@
 <?php
 declare(strict_types=1);
 
-require 'lib/IdApi.php';
+// require 'lib/IdApi.php';
 
+use Exception;
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Response;
+use SmileIdentity\IdApi;
 use Ouzo\Utilities\Clock;
+use SmileIdentity\JobType;
+use GuzzleHttp\HandlerStack;
+use SmileIdentity\Signature;
+use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
+use GuzzleHttp\Handler\MockHandler;
+use GuzzleHttp\Exception\GuzzleException;
 
 final class IdApiTest extends TestCase
 {
