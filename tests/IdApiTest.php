@@ -96,7 +96,7 @@ final class IdApiTest extends TestCase
     {
         $expected_values = implode(", ", array(JobType::ENHANCED_KYC));
         $this->expectException(Exception::class);
-        $this->expectExceptionMessage("job_type must be one of $expected_values");
+        $this->expectExceptionMessage("job_type must be $expected_values");
         
         $api_key = file_get_contents(__DIR__ . "/assets/ApiKey.pub");
         $id_api = new IdApi(001, "https://callback.smileidentity.com", $api_key, 0);
