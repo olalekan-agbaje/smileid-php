@@ -3,8 +3,6 @@ declare(strict_types=1);
 
 // require 'lib/SmileIdentityCore.php';
 
-use Exception;
-use DateTimeInterface;
 use GuzzleHttp\Client;
 use Ouzo\Utilities\Clock;
 use SmileIdentity\Config;
@@ -12,7 +10,6 @@ use SmileIdentity\JobType;
 use GuzzleHttp\HandlerStack;
 use SmileIdentity\ImageType;
 use GuzzleHttp\Psr7\Response;
-use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use GuzzleHttp\Handler\MockHandler;
 use SmileIdentity\SmileIdentityCore;
@@ -66,7 +63,7 @@ final class SmileIdentityCoreTest extends TestCase
 
     public function testInitialize(): void
     {
-        $this->assertInstanceOf('SmileIdentityCore', $this->sic);
+        $this->assertInstanceOf(SmileIdentityCore::class, $this->sic);
     }
 
     public function testGetVersion(): void

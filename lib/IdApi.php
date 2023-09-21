@@ -5,7 +5,6 @@ namespace SmileIdentity;
 //     require_once($class . '.php');
 // });
 
-use Exception;
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Exception\GuzzleException;

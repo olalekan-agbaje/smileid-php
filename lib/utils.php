@@ -1,9 +1,6 @@
 <?php
 
-// use Exception;
-use Exception;
 use SmileIdentity\JobType;
-use InvalidArgumentException;
 use SmileIdentity\BusinessVerificationType;
 
 function endsWith($haystack, $needle)

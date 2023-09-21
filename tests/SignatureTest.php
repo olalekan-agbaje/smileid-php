@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 // require 'lib/Signature.php';
 
-use DateTimeInterface;
 use Ouzo\Utilities\Clock;
 use SmileIdentity\Signature;
 use PHPUnit\Framework\TestCase;
