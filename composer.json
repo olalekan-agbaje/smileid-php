@@ -1,5 +1,5 @@
 {
-	"name": "olalekan/smileid-php",
+	"name": "olalekan/smile-identity-core",
 	"type": "library",
 	"description": "Smile ID PHP Server-toserver library",
 	"homepage": "https://github.com/olalekan-agbaje/smileid-php",
