@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 // require 'lib/IdApi.php';
 
-use Exception;
 use GuzzleHttp\Client;
 use SmileIdentity\IdApi;
 use Ouzo\Utilities\Clock;
