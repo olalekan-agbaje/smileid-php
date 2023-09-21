@@ -27,6 +27,6 @@ jobs:
         key: ${{ runner.os }}-${{ matrix.php-version }}-composer-${{ hashFiles('**/composer.lock') }}
         restore-keys: ${{ runner.os }}-${{ matrix.php-version }}-composer-
     - name: Install dependencies
-      run: composer install --ignore-platform-reqs
+      run: composer install --prefer-dist --ignore-platform-reqs
     - name: Run tests
       run: ./vendor/bin/phpunit
